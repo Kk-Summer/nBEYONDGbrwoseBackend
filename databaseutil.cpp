@@ -51,6 +51,7 @@ void DataBaseUtil::loadDatabaseConfig()
     snowDbSettings.setIniCodec(QTextCodec::codecForName("UTF-8"));
     snowDbSettings.beginGroup("Database");
 
+
     this->serverAddrress = snowDbSettings.value(
         QString("serverAddrress"),
         QString("localhost")
